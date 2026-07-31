@@ -319,6 +319,42 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 10.0
+      - Name: TabEnabled
+        Type: Switch
+        Children:
+        - Name: Checked
+          Type: BaseDataVariableType
+          DataType: Boolean
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 60.0
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
+      - Name: ContentAlignment
+        Type: BaseVariableType
+        DataType: ContentHorizontalAlignment
+        ModellingRule: Optional
+      - Name: TabVisible
+        Type: Switch
+        Children:
+        - Name: Checked
+          Type: BaseDataVariableType
+          DataType: Boolean
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 60.0
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
   - Name: NavigationPanel1
     Type: NavigationPanel
     Children:
@@ -367,6 +403,15 @@ Children:
           DataType: ResourceUri
           ModellingRule: Optional
           Value: "ns=7;%PROJECTDIR%/Settings.png"
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Header/HL/TabEnabled/Checked"
       - Name: Panel3
         Type: NavigationPanelItem
         Children:
@@ -388,6 +433,15 @@ Children:
           DataType: ResourceUri
           ModellingRule: Optional
           Value: "ns=7;%PROJECTDIR%/Overview.png"
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Header/HL/TabVisible/Checked"
     - Name: CurrentPanel
       Type: NodePointer
       DataType: NodeId
