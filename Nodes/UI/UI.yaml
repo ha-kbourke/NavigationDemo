@@ -331,6 +331,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"Home"}
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
@@ -340,12 +341,18 @@ Children:
             Type: PropertyType
             DataType: NodeId
             Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+        - Name: ImagePath
+          Type: BaseDataVariableType
+          DataType: ResourceUri
+          ModellingRule: Optional
+          Value: "ns=7;%PROJECTDIR%/Home.png"
       - Name: Panel2
         Type: NavigationPanelItem
         Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"Settings"}
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
@@ -355,12 +362,18 @@ Children:
             Type: PropertyType
             DataType: NodeId
             Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+        - Name: ImagePath
+          Type: BaseDataVariableType
+          DataType: ResourceUri
+          ModellingRule: Optional
+          Value: "ns=7;%PROJECTDIR%/Settings.png"
       - Name: Panel3
         Type: NavigationPanelItem
         Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"Overview"}
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
@@ -370,6 +383,11 @@ Children:
             Type: PropertyType
             DataType: NodeId
             Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+        - Name: ImagePath
+          Type: BaseDataVariableType
+          DataType: ResourceUri
+          ModellingRule: Optional
+          Value: "ns=7;%PROJECTDIR%/Overview.png"
     - Name: CurrentPanel
       Type: NodePointer
       DataType: NodeId
