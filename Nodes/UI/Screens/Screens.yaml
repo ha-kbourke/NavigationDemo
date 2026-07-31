@@ -1,2 +1,63 @@
 Name: Screens
 Type: ScreensCategoryFolder
+Children:
+- Name: Screen1
+  Id: g=14583bab74d3e8051b2592cf1fd767d5
+  Supertype: Screen
+  ReferenceType: HasComponent
+  Children:
+  - Name: BackgroundColor
+    Type: BaseDataVariableType
+    DataType: Color
+    ModellingRule: Optional
+    Value: "#0fafff"
+- Name: Screen2
+  Id: g=5213f2bb4c9267341c4172af915ff00b
+  Supertype: Screen
+  ReferenceType: HasComponent
+  Children:
+  - Name: BackgroundColor
+    Type: BaseDataVariableType
+    DataType: Color
+    ModellingRule: Optional
+    Value: "#eb001b"
+- Name: Screen3
+  Id: g=24387bbfbfa2f0245fd517d4be8cb844
+  Supertype: Screen
+  ReferenceType: HasComponent
+  Children:
+  - Name: BackgroundColor
+    Type: BaseDataVariableType
+    DataType: Color
+    ModellingRule: Optional
+    Value: "#f8e71c"
+- Name: Screen4
+  Id: g=5dbe21eacc65e98a752a7a4ef4086f4e
+  Supertype: Screen
+  ReferenceType: HasComponent
+  Children:
+  - Name: BackgroundColor
+    Type: BaseDataVariableType
+    DataType: Color
+    ModellingRule: Optional
+    Value: "#008000"
+- Name: Screen5
+  Id: g=47cf0c7e171af782a81ba9c0c2da083a
+  Supertype: Screen
+  ReferenceType: HasComponent
+  Children:
+  - Name: BackgroundColor
+    Type: BaseDataVariableType
+    DataType: Color
+    ModellingRule: Optional
+    Value: "#ffa500"
+- Name: Screen6
+  Id: g=1d74bb504e41ba9d44d59a40f2de9ffd
+  Supertype: Screen
+  ReferenceType: HasComponent
+  Children:
+  - Name: BackgroundColor
+    Type: BaseDataVariableType
+    DataType: Color
+    ModellingRule: Optional
+    Value: "#ffc0cb"
